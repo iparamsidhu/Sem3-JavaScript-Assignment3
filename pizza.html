@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzapizza.ca - Order</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Img/logo.PNG" alt="My Website Logo">
+        <h1>Place Your Order</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pizza.html">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Build Your Pizza</h2>
+            <form id="pizza-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <fieldset>
+                    <legend>Choose Size:</legend>
+                    <label><input type="radio" name="size" value="small" required> Small</label>
+                    <label><input type="radio" name="size" value="medium" required> Medium</label>
+                    <label><input type="radio" name="size" value="large" required> Large</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <label><input type="checkbox" name="toppings" value="Cheese"> Cheese</label>
+                    <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Base Sauce</legend>
+                    <label><input type="radio" name="sauce" value="marinara" required> Marinara</label>
+                    <label><input type="radio" name="sauce" value="pesto" required> Pesto</label>
+                    <label><input type="radio" name="sauce" value="alfredo" required> Alfredo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Drinks</legend>
+                    <label><input type="radio" name="drinks" value="coke" required> Coke</label>
+                    <label><input type="radio" name="drinks" value="dietcoke" required> Diet Coke</label>
+                </fieldset>
+
+                <label for="delivery">Delivery Method:</label>
+                <select id="delivery" name="delivery" required>
+                    <option value="pickup">Pickup</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <button type="button" id="order-btn">Place Order</button>
+            </form>
+        </section>
+        <section id="pizza-description">
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: pizzapizza.ca</p>
+        <p>Give us a call at +1(234)-567-8888</p>
+    </footer>
+
+</body>
+</html>
